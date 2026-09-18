@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hurmat Fatima - Resume</title>
+<style>
+  * { box-sizing: border-box; }
+  html { background: #e9e9e6; }
+  body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 10.8pt;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0.3in auto;
+    padding: 0.6in 0.65in;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15), 0 10px 26px rgba(0,0,0,0.12);
+    line-height: 1.18;
+    position: relative;
+  }
+  .page:first-child { margin-top: 0.3in; }
+  .page-number {
+    position: absolute;
+    bottom: 0.28in;
+    right: 0.5in;
+    font-size: 8pt;
+    color: #999;
+  }
+
+  svg.icon { width: 10px; height: 10px; vertical-align: -1px; margin-right: 4px; fill: #000; }
+
+  /* ---------- Header ---------- */
+  .header { text-align: center; margin-bottom: 6pt; }
+  .header h1 {
+    font-variant: small-caps;
+    font-size: 27pt;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 0 0 3pt 0;
+  }
+  .header .location { margin: 0 0 3pt 0; font-size: 10.5pt; }
+  .header .contact {
+    font-size: 9.6pt;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3pt 14px;
+  }
+  .header .contact a { color: #000; text-decoration: underline; }
+  .header .contact span.item { white-space: nowrap; margin: 0 7px; }
+
+  /* ---------- Section headings ---------- */
+  h2.section {
+    font-variant: small-caps;
+    font-size: 13.5pt;
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+    margin: 9pt 0 3pt 0;
+    padding-bottom: 1pt;
+  }
+  h2.section.first { margin-top: 0; }
+
+  /* ---------- Two-column heading rows (Education / Awards / Work) ---------- */
+  .subheading { display: table; width: 100%; margin: 2pt 0 1pt 0; }
+  .subheading .row1, .subheading .row2 { display: table-row; }
+  .subheading .row1 > span, .subheading .row2 > span { display: table-cell; }
+  .subheading .right { text-align: right; white-space: nowrap; padding-left: 10pt; }
+  .subheading .row1 { font-weight: 700; font-size: 10.5pt; }
+  .subheading .row2 { font-style: italic; font-size: 10.3pt; }
+
+  /* ---------- Coursework 4-col balanced layout (mirrors LaTeX multicols) ---------- */
+  .coursework { margin: 4pt 0 6pt 0; font-size: 10.3pt; }
+  .coursework ul {
+    column-count: 4;
+    column-gap: 14px;
+    margin: 0; padding: 0; list-style: none;
+  }
+  .coursework li {
+    padding-left: 11px;
+    position: relative;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    margin-bottom: 1pt;
+  }
+  .coursework li::before { content: "\2022"; position: absolute; left: 0; font-size: 8pt; top: 2px; }
+
+  /* ---------- Project heading row ---------- */
+  .project-row { display: table; width: 100%; font-size: 10.3pt; margin-top: 5pt; }
+  .project-row .title, .project-row .date { display: table-cell; }
+  .project-row .title b { font-weight: 700; }
+  .project-row .title i { font-style: italic; }
+  .project-row .date { font-weight: 700; text-align: right; white-space: nowrap; padding-left: 10px; }
+
+  ul.bullets { margin: 2pt 0 1pt 0; padding-left: 15px; }
+  ul.bullets li { font-size: 10.1pt; margin-bottom: 1.5pt; }
+  ul.bullets li::marker { font-size: 8pt; }
+
+  .skills-block p { margin: 1.5pt 0; font-size: 10.1pt; line-height: 1.3; }
+
+  @media print {
+    html { background: #fff; }
+    .page { box-shadow: none; margin: 0; page-break-after: always; }
+    .page-number { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== PAGE 1 ========== -->
+<div class="page">
+
+  <div class="header">
+    <h1>Hurmat Fatima</h1>
+    <div class="location">Lahore, Pakistan</div>
+    <div class="contact">
+      <span class="item">
+        <svg class="icon" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L184.3 167c13.7-11.1 18.4-30 11.6-46.3l-40-96z"/></svg>+923265309317
+      </span>
+      <span class="item">
+        <svg class="icon" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg><a href="mailto:hurmatf20@gmail.com">hurmatf20@gmail.com</a>
+      </span>
+      <span class="item">
+        <svg class="icon" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg><a href="https://linkedin.com/in/hurmat-fatima" target="_blank">linkedin.com/in/hurmat-fatima</a>
+      </span>
+      <span class="item">
+        <svg class="icon" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5 21.3 0 42.8 2.9 62.8 8.5 0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg><a href="https://github.com/hurmat-fatima01" target="_blank">github.com/hurmat-fatima01</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <h2 class="section first">Education</h2>
+  <div class="subheading">
+    <div class="row1">
+      <span>Punjab University College of Information Technology &ndash; PUCIT</span>
+      <span class="right">Sep. 2024 &ndash; May 2028</span>
+    </div>
+    <div class="row2">
+      <span>Bachelor of Science in Information Technology</span>
+      <span class="right">Lahore, Pakistan</span>
+    </div>
+  </div>
+
+  <!-- RELEVANT COURSEWORK -->
+  <h2 class="section">Relevant Coursework</h2>
+  <div class="coursework">
+    <ul>
+      <li>Data Structures</li>
+      <li>Object Oriented Programming</li>
+      <li>Databases</li>
+      <li>Operating Systems</li>
+      <li>Information Security</li>
+      <li>Computer Organization</li>
+      <li>Assembly Language</li>
+      <li>Discrete Structures</li>
+      <li>Computer Networking</li>
+      <li>Digital Logic Design</li>
+      <li>Artificial Intelligence</li>
+      <li>Machine Learning</li>
+      <li>Web Technologies</li>
+    </ul>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <h2 class="section">Work Experience</h2>
+  <div class="subheading">
+    <div class="row1">
+      <span>Allied Bank Limited (ABL)</span>
+      <span class="right">2026</span>
+    </div>
+    <div class="row2">
+      <span>AI Engineering Intern</span>
+      <span class="right">Lahore, Pakistan</span>
+    </div>
+  </div>
+  <ul class="bullets">
+    <li>Built a RAG-based chatbot using FastAPI, ChromaDB, and Ollama, implementing query rewriting, conversation memory, chunk retrieval, and retrieval-quality improvements.</li>
+    <li>Designed n8n workflows to orchestrate chatbot components and connected automation nodes to create end-to-end AI workflows.</li>
+    <li>Explored Docker and MCP (Model Context Protocol) servers for containerization and AI tool integration.</li>
+    <li>Developed a SOC comparison pipeline to extract bank charges from competitor PDFs and compare them against ABL's master taxonomy using LLM-assisted extraction.</li>
+  </ul>
+
+  <!-- PROJECTS -->
+  <h2 class="section">Projects</h2>
+
+  <div class="project-row">
+    <span class="title"><b>SOC Comparison Pipeline</b> | <i>Python, Gemini, LLMs, PDF Processing, Excel</i></span>
+    <span class="date">2026</span>
+  </div>
+  <ul class="bullets">
+    <li>Built an AI-assisted pipeline to compare Schedule of Charges (SOC) across banks against ABL's master taxonomy.</li>
+    <li>Extracted and validated charges from competitor bank PDFs using LLM-assisted analysis and generated structured comparison spreadsheets.</li>
+  </ul>
+
+  <div class="project-row">
+    <span class="title"><b>RAG-Based ABL Chatbot</b> | <i>FastAPI, ChromaDB, Ollama, Python</i></span>
+    <span class="date">2026</span>
+  </div>
+  <ul class="bullets">
+    <li>Built a RAG-based chatbot using FastAPI, ChromaDB, and Ollama for document-based question answering and semantic retrieval.</li>
+    <li>Implemented query rewriting, conversation memory, chunk retrieval, vague-query detection, and retrieval-quality testing.</li>
+  </ul>
+
+  <div class="project-row">
+    <span class="title"><b>NutriAI</b> | <i>React, Node.js, Express, MongoDB, Groq AI, Nutritionix API</i></span>
+    <span class="date">2026</span>
+  </div>
+  <ul class="bullets">
+    <li>Built a full-stack AI nutritionist application with meal planning, BMI calculator, food database search, recipe suggestions, and progress dashboard with charts.</li>
+    <li>Integrated Groq AI for personalized weekly meal plans and Nutritionix API for real-time nutritional data; implemented JWT authentication and appointment booking.</li>
+  </ul>
+
+  <div class="project-row">
+    <span class="title"><b>ZestMart &ndash; General Grocery Store</b> | <i>React, Node.js, Express, MongoDB</i></span>
+    <span class="date">2026</span>
+  </div>
+  <ul class="bullets">
+    <li>Developed a full-stack e-commerce grocery platform with product listings, category filters, shopping cart, order management, and admin inventory dashboard.</li>
+    <li>Implemented JWT authentication, payment flow integration, and a responsive React interface with custom CSS.</li>
+  </ul>
+
+  <div class="project-row">
+    <span class="title"><b>Encryption &amp; Decryption App</b> | <i>HTML5, CSS3, JavaScript, Web Crypto API</i></span>
+    <span class="date">2026</span>
+  </div>
+  <ul class="bullets">
+    <li>Built a browser-based cryptography application supporting AES-256, RSA key generation, SHA hashing, Base64, Hex, Morse, and XOR image encryption.</li>
+    <li>Implemented PBKDF2 key stretching, AES-GCM encryption, RSA-OAEP, and hash integrity verification using the Web Crypto API.</li>
+  </ul>
+
+  <div class="project-row">
+    <span class="title"><b>Online Chat Application</b> | <i>React, Express, Socket.IO, MongoDB</i></span>
+    <span class="date">2025</span>
+  </div>
+  <ul class="bullets">
+    <li>Built a real-time chat application enabling private messaging using WebSockets with Socket.IO and Express APIs.</li>
+    <li>Implemented login/logout, message persistence in MongoDB, and responsive UI with React.</li>
+  </ul>
+
+  <div class="project-row">
+    <span class="title"><b>Online Bookstore Platform</b> | <i>React, Express, MongoDB</i></span>
+    <span class="date">2025</span>
+  </div>
+  <ul class="bullets">
+    <li>Developed a full-stack e-commerce web application for browsing and purchasing books with cart and order management features.</li>
+    <li>Implemented JWT authentication and used MongoDB to manage inventory and order data.</li>
+  </ul>
+
+  <div class="page-number">1</div>
+</div>
+
+<!-- ========== PAGE 2 ========== -->
+<div class="page">
+
+  <!-- TECHNICAL SKILLS -->
+  <h2 class="section first">Technical Skills</h2>
+  <div class="skills-block">
+    <p><b>Languages</b>: C++, Python, JavaScript, SQL, PL/SQL, PHP, HTML/CSS</p>
+    <p><b>Frameworks &amp; Libraries</b>: React.js, Node.js, Express.js, FastAPI, Bootstrap, Socket.IO, Pandas, NumPy, Matplotlib</p>
+    <p><b>Databases</b>: Oracle, MySQL, MongoDB, PostgreSQL</p>
+    <p><b>AI &amp; LLM Technologies</b>: Generative AI, RAG, LLMs, Groq AI, Ollama, ChromaDB, Prompt Engineering</p>
+    <p><b>APIs &amp; Integration</b>: REST APIs, Nutritionix API, Web Crypto API, MCP</p>
+    <p><b>Developer Tools</b>: Git, GitHub, VS Code, Postman, Jupyter Notebook, Docker</p>
+    <p><b>Other Technologies</b>: MERN Stack, n8n, JWT Authentication, WebSockets, OOP, File I/O</p>
+  </div>
+
+  <!-- AWARDS & CERTIFICATIONS -->
+  <h2 class="section">Awards &amp; Certifications</h2>
+
+  <div class="subheading">
+    <div class="row1">
+      <span>Full Stack AI Engineer</span>
+      <span class="right">2024 &ndash; 2025</span>
+    </div>
+    <div class="row2">
+      <span>Certified Course Graduate &ndash; Arfa Software Technology Park, Lahore</span>
+      <span class="right">Lahore, Pakistan</span>
+    </div>
+  </div>
+  <ul class="bullets">
+    <li>Completed an industry-level course in Full Stack Web Development (MERN Stack) and Artificial Intelligence / Machine Learning.</li>
+    <li>Gained hands-on experience building full-stack applications with React, Node.js, Express, and MongoDB alongside practical AI/ML model development.</li>
+  </ul>
+
+  <div class="subheading" style="margin-top:6pt;">
+    <div class="row1">
+      <span>The Punjab Schools</span>
+      <span class="right">2019 &ndash; 2021</span>
+    </div>
+    <div class="row2">
+      <span>Secured 2nd Position across Lahore Board in Secondary Education (Matriculation, 10th Grade)</span>
+      <span class="right">Lahore, Pakistan</span>
+    </div>
+  </div>
+
+  <div class="subheading" style="margin-top:6pt;">
+    <div class="row1">
+      <span>Apex College</span>
+      <span class="right">2021 &ndash; 2023</span>
+    </div>
+    <div class="row2">
+      <span>Achieved 2nd Rank in College &ndash; Higher Secondary Education (F.Sc. Pre-Medical)</span>
+      <span class="right">Punjab, Pakistan</span>
+    </div>
+  </div>
+
+  <div class="page-number">2</div>
+</div>
+
+</body>
+</html>
